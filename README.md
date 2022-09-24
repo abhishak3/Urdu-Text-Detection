@@ -21,10 +21,10 @@ This model can be created effectively using r-CNN, faster r-CNN, EAST or YOLO mo
 ## Procedure
 
 ### Training Data
-![](../Images/training_data.png)
+![](./Images/training_data.png)
 
 ### Testing Data
-![](../Images/testing_data.png)
+![](./Images/testing_data.png)
 
 
 ### Aggregated Data
@@ -33,7 +33,7 @@ Here, every box has its own single entry in the dataframe. In order to feed the 
 So, we created a function which combines all the boxes in a single image in one row.
 
 
-![](../Images/aggregated_data.png)
+![](./Images/aggregated_data.png)
 
 So, this is our reduced dataframe.
 
@@ -48,7 +48,7 @@ We have multiple image array as input which will be fed to our model and then bo
 
 ### Model Creation
 Following is our CNN architecture used.
-![](../Images/CNN_architecture.png)
+![](./Images/CNN_architecture.png)
 
 We used **Dropout** for preventing overfitting of data and **BatchNormalization** to scale down the parameters.
 
@@ -56,13 +56,13 @@ We used **Dropout** for preventing overfitting of data and **BatchNormalization*
 Here we've tested our mode with various optimizers
 |Optimizer|Accuracy|Loss|
 |---------|--------|----|
-|Adadelta|![](../Images/adadelta_acc.png)|![](../Images/adadelta_loss.png)|
-|Adagrad|![](../Images/adagrad_acc.png)|![](../Images/adagrad_loss.png)|
-|Adam|![](../Images/adam_acc.png)|![](../Images/adam_loss.png)|
-|SGD|![](../Images/sgd_acc.png)|![](../Images/sgd_loss.png)|
+|Adadelta|![](./Images/adadelta_acc.png)|![](./Images/adadelta_loss.png)|
+|Adagrad|![](./Images/adagrad_acc.png)|![](./Images/adagrad_loss.png)|
+|Adam|![](./Images/adam_acc.png)|![](./Images/adam_loss.png)|
+|SGD|![](./Images/sgd_acc.png)|![](./Images/sgd_loss.png)|
 
 ### Output_samples
-![](../Images/output_samples.png)
+![](./Images/output_samples.png)
 
 ### Conclusion
 We successfully tested out different optimizer functions on models and have measured their accuracy and loss.
